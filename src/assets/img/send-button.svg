@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="smiley-button" transform="translate(0.001)">
+    <circle id="Ellipse_26" data-name="Ellipse 26" cx="22.5" cy="22.5" r="22.5" transform="translate(-0.001)" fill="#f9aa10"/>
+    <path id="Icon_ionic-ios-send" data-name="Icon ionic-ios-send" d="M26.048,4.553,4.779,13.823a.488.488,0,0,0,.017.886l5.753,3.25a.928.928,0,0,0,1.06-.1l11.344-9.78c.075-.064.255-.185.324-.116s-.041.249-.1.324L13.359,19.339a.925.925,0,0,0-.093,1.107l3.76,6.031a.489.489,0,0,0,.881-.012L26.7,5.2A.488.488,0,0,0,26.048,4.553Z" transform="translate(5.873 7.873)"/>
+  </g>
+</svg>

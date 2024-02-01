@@ -1,0 +1,80 @@
+/*=============== GOOGLE FONTS ===============*/
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+    --header-height: 8rem;
+    --top-header-height:5rem;
+    --bottom-header-height:3rem;
+
+    /*========== Box ==========*/
+    --border: 0.05rem solid rgba(0, 0, 0, 0.2);
+    --box-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, 0.1);
+    /*========== Colors ==========*/
+
+    --primary-color: #F9AA10;
+    --dark-color: #252525;
+    --darker-color: #181914;
+    --text-color: #181914;
+    --text-color-light: #FFFFFF;
+
+    /* Green gradient */
+    // --body-color: linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%);
+    // --container-color: linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(58, 28%, 35%) 100%);
+
+    /* Red gradient */
+    // --body-color: linear-gradient(90deg, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
+    // --container-color: linear-gradient(136deg, hsl(360, 28%, 35%) 0%, hsl(18, 28%, 35%) 100%);
+
+    /* Black solid */
+    // --body-color: hsl(30, 8%, 8%);
+    // --container-color: hsl(30, 8%, 10%);
+
+    /*========== Font and typography ==========*/
+
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --input-font-size: 14px;
+
+    // Responsive typography
+    @media screen and (min-width: 992px){
+        --biggest-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-bold: 550;
+    --font-black: 900;
+
+    /*========== Margenes Bottom ==========*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+
+    --mt-0-25: .25rem;
+    --mt-0-5: .5rem;
+    --mt-0-75: .75rem;
+    --mt-1: 1rem;
+    --mt-1: 1rem;
+    --mt-1-5: 1.5rem;
+    --mt-2: 2rem;
+    --mt-2-5: 2.5rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}

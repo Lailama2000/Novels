@@ -1,0 +1,79 @@
+.forgot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  &.ar{
+    direction: rtl;
+  }
+  .email {
+    width: 25rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #171717;
+    border-radius: 0.5rem;
+    border: solid 1px var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+      width: 80%;
+      .email-input {
+        width: 100%;
+        height: 2rem;
+        background: #404040;
+        border-radius: 2rem;
+        border: solid 1px var(--primary-color);
+        input {
+          width: 100%;
+          height: 100%;
+          background: none;
+          padding: 0 1rem;
+          color: #fff;
+          &::placeholder {
+            color: #fff;
+          }
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .dismiss {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+  }
+  .heading {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: var(--h2-font-size);
+      font-weight: 800;
+      color: #fff;
+    }
+  }
+  .submit {
+    width: 100%;
+    border-radius: 2rem;
+  }
+  .error {
+    color: red;
+  }
+}

@@ -1,0 +1,102 @@
+.support{
+    background: #4A4A4A;
+    height: calc(100vh - var(--top-header-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    &.ar{
+        direction: rtl;
+    }
+    .messages-container{
+        width: 100%;
+        padding: 10% 10% 0 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: 80%;
+        overflow: auto;
+        scroll-behavior: smooth;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .message{
+            background: #fff;
+            border-radius: .5rem;
+            // height: 4rem;
+            width: 50%;
+            padding: 1rem 2rem;
+            align-self: self-end;
+            position: relative;
+            .person{
+                position: absolute;
+                top: 0; right: -4rem;
+            }
+            .hide{
+                display: none;
+            }
+        }
+        .sender{
+            background: var(--primary-color);
+            align-self: self-start;
+            .person{
+                position: absolute;
+                top: 0; left: -4rem;
+            }
+        }
+    }
+
+    .input-container{
+        width: 80%;
+        height: 2rem;
+        border-radius: 1rem;
+        background: #707070;
+        position: relative;
+        input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            padding: 1rem;
+            color: #fff;
+        }
+        .send-button{
+            position: absolute;
+            top: 0;
+            right: -3rem;
+            height: 100%;
+            svg{
+                height: inherit;
+                width: inherit;
+            }
+        }
+    }
+    .error{
+        border: solid 1px red;
+    }
+    @media (max-width:768px) {
+        .messages-container{
+            .message{
+                width: 90%;
+                .person{
+                    display: none;
+                }
+            }
+        }
+
+        .input-container{
+            .send-button{
+                right: 0;
+            }
+        }
+    }
+}
+.ar{
+    .send-button{
+        right: unset !important;
+        left: -3rem;
+        @media (max-width:768px) {
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+/*===============  BREAKPOINTS ===============*/
+
+
+
+
+/* For small devices */
+@media screen and (max-width: 320px){
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    
+    
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+    
+}
+
+@media screen and (max-width: 767px){
+    section{
+        height: calc(100vh - var(--header-height));
+    }
+    // .header{
+    //     overflow: hidden;
+    //     width: 100vw;
+    //     border-bottom: solid 1px var(--primary-color);
+    // }
+    // .top-nav{
+    //     overflow: hidden;
+    //     height: 100%;
+    //     width: 100%;
+    //     .nav{
+    //         &__menu{
+    //             display: none;
+    //         }
+    //         .menu-icon{
+    //             display: block;
+    //         }
+    //     }
+
+    // }
+    // .bottom-nav{
+    //     // display: none;
+    //     height: calc(100vh - var(--header-height));
+    //     // position: absolute;
+    //     // top: -200%;
+    //     // left: -200;
+    //     &.active{
+    //         // position: static;
+    //         // display: block;
+    //     }
+    // }
+}
+
+@media screen and (min-width: 767px){
+    section{
+        height: calc(100vh - var(--header-height));
+    }
+    
+}
+ 
+/* For large devices */
+@media screen and (min-width: 992px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+
+}
+// for shortest screens
+
+@media screen and (max-height: 500px) {
+    section{
+        height: fit-content;
+    }
+    .footer{
+        display: none;
+    }
+}
